@@ -1,8 +1,13 @@
 import React from 'react';
-import Counter from './Counter'
+import Counter from './Counter';
+import Temperature from './Temperature';
+import TemperatureState from '../state/Temperature';
 
 const App = () => (
-    <div><Counter /></div>
+  <div>
+    <Counter />
+    <Temperature temperatureState={TemperatureState} />
+  </div>
 );
 
 export default App;
