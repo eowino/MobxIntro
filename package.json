@@ -10,6 +10,9 @@
   "author": "EO",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "parcel": "^1.9.7"
   },
   "dependencies": {

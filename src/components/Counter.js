@@ -1,27 +1,23 @@
 import React from 'react';
+import { observable } from 'mobx';
+import { observer } from 'mobx-react';
 
 class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0
-    };
+  state = {
+    count: 0
+  };
 
-    this.handleDec = this.handleDec.bind(this);
-    this.handleInc = this.handleInc.bind(this);
-  }
-
-  handleDec() {
+  handleDec = () => {
     this.setState(({ count }) => ({
       count: count - 1
     }));
-  }
+  };
 
-  handleInc() {
+  handleInc = () => {
     this.setState(({ count }) => ({
       count: count + 1
     }));
-  }
+  };
 
   render() {
     return (
