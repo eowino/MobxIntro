@@ -1,8 +1,11 @@
 import React from 'react';
-import Counter from './Counter'
+import Counter from './Counter';
+import CounterState from '../state/Counter';
 
 const App = () => (
-    <div><Counter /></div>
+  <div>
+    <Counter store={CounterState}/>
+  </div>
 );
 
 export default App;
