@@ -6,7 +6,7 @@ import TemperatureState from '../state/Temperature';
 const App = () => (
   <div>
     <Counter />
-    <Temperature temperatureState={TemperatureState} />
+    <Temperature />
   </div>
 );
 
